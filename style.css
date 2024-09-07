@@ -1,0 +1,254 @@
+*{
+    font-family: "Baskervville SC", serif;
+}
+
+:root{
+    --x:rgb(204, 152, 219)
+}
+
+html{
+    scroll-behavior: smooth;
+}
+#butn{
+    background-color: var(--x);
+    
+}
+#butn:hover{
+    background-color:white;
+    color: var(--x);
+}
+#logo{
+    width: 150px;
+}
+
+/* HOME */
+
+#home{
+    width: 100%;
+    /* height: 100vh; */
+    background-image: url(./images/3257323.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+}
+#butn{
+    margin-left: 90px;
+}
+
+#heading{
+    margin:40% 10% 10% 10%;
+    color: white;
+    padding: 8% 8%;
+    width: 700px;
+    height: 300px;
+    background-color:rgba(255, 255, 255, 0.107);
+}
+#heading h4{
+    color: var(--x);
+}
+@media(max-width:600px){
+    #heading{
+        margin-top: 60%;
+        width: 350px;
+        height: 200px;
+
+    }
+}
+
+/* about */
+
+#about h1{
+    color: white;
+    text-align: center;
+}
+#para{
+    color: white;
+    font-size: 26px;
+}
+@media(max-width:600px){
+    #para{
+        margin-left: 15px;
+        font-size: 20px;
+    }
+}
+span{
+    color: var(--x);
+}
+#info p{
+    font-size: 22px;
+}
+#info{
+    color: white;
+    /* padding-left: 150px; */
+    /* margin-left: 100px; */
+}
+
+@media(max-width:600px){
+    #info{
+        margin-top: 30px;
+    }
+    
+    #info p,h2{
+        font-size: 20px;
+        margin-left: 15px;
+        text-align: center;
+
+    }
+
+}
+
+/* education */
+.title{
+    color: var(--x);
+    text-align: center;
+}
+.text{
+    color: white;
+    text-align: justify;
+}
+.box{
+    box-shadow:0px 6px 8px rgb(204, 152, 219)  ;
+}
+.box p{
+    font-size: 20px;
+}
+@media(max-width:600px){
+    .box{
+        margin-left: 25px;
+    }
+    #box3{
+        margin-top: 50px;
+    }
+    .box p{
+        font-size: 15px;
+    }
+}
+
+/* skills */
+
+
+/* #dives{
+    display: flex;
+    flex-wrap: wrap;
+}
+.item{
+    flex-grow: 2;
+    flex-basis: 150; 
+    
+} */
+
+.items{
+    width: 100px;
+    height: 100px;
+    
+}
+#dives{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 2rem;
+    overflow: hidden;
+}
+@media(min-width:600px){
+    #skill{
+        margin-top: 150px;
+    }
+    #dives{
+        padding: 40px 200px 0px 250px;
+    }
+}
+.items:hover{
+    box-shadow:0px 6px 8px rgb(204, 152, 219)  ;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+/* projects */
+
+#projects{
+    margin-top: 150px ;
+}
+.proj{
+    margin-top: 80px;
+    position: relative;
+    width: 350px;
+    height: 300px;
+    padding: 20px 20px 20px 25px;
+    background-color:rgba(255, 255, 255, 0.107)
+    
+    
+}
+.pro{
+    position: absolute;
+}
+.proj h2{
+    position: absolute;
+    bottom: 10%;
+    color: var(--x);
+}
+.proj a{
+    position: absolute;
+    bottom: 5%;
+    text-decoration: none;
+}
+@media(min-width:600px){
+    .project{
+        padding-left: 350px;
+    }
+    
+}
+@media(max-width:600px){
+    .project{
+        padding-left: 40px;
+    }
+    .proj a{
+        padding-left: 15px;
+    }
+    
+}
+
+/* contacts */
+
+#contacts{
+    margin-top: 150px;
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid red; */
+    margin: 0px 13px ;
+    display: flex;
+    justify-content: center;
+    /* horizontally center */
+    align-items: center;
+     /* vertically center */
+    
+}
+.icon a{
+    color: var(--x);
+}
+@media(min-width:600px){
+    .icons{
+        margin-left:550px ;
+    }
+    
+}
+
+/* contacts */
+
+footer{
+    margin-top: 100px;
+    background-color: rgba(255, 255, 255, 0.104);
+    height: 60px;
+}
+
+@media(max-width:600px){
+    .icons{
+        padding-left: 18px;
+    }
+    footer h4{
+        font-size: 15px;
+    }
+
+}
